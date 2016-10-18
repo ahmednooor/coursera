@@ -1,0 +1,127 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: cursive;
+}
+
+.main-heading {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+.chicken, .beef, .sushi {
+    background-color: lightgoldenrodyellow;
+    border: 1px solid black;
+    padding: 14px;
+}
+
+h1, h3, p {
+    color: black;
+}
+
+.item-headings.one {
+    background-color: coral;
+    color: white;
+    border: 1px solid darkslategray;
+}
+
+.item-headings.two {
+    background-color: crimson;
+    color: white;
+    border: 1px solid darkslategray;
+}
+
+.item-headings.three {
+    background-color: palevioletred;
+    color: white;
+    border: 1px solid darkslategray;
+}
+
+.item-text {
+    margin-top: 24px;
+}
+
+.item-headings {
+    width: 120px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    padding: 0 0 2px 0;
+    text-align: center;
+    margin: 0;
+}
+
+@media only screen and (min-width: 992px) {
+    .wrapper {
+        width: 992px;
+    }
+    
+    .chicken, .beef, .sushi {
+        width: 310px;
+        float: left;
+        position: relative;
+    }
+    
+    .chicken {
+        margin: 30px 8px 0 15px;
+    }
+    
+    .beef {
+        margin: 30px 8px 0 8px;
+    }
+    
+    .sushi {
+        margin: 30px 15px 0 8px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .wrapper {
+        max-width: 991px;
+    }
+    
+    .chicken, .beef {
+        max-width: calc(50% - 23px);
+        float: left;
+        position: relative;
+    }
+    
+    .sushi {
+        max-width: calc(100% - 30px);
+        float: left;
+        position: relative;
+    }
+    
+    .chicken {
+        margin: 30px 8px 0 15px;
+    }
+    
+    .beef {
+        margin: 30px 8px 0 8px;
+    }
+    
+    .sushi {
+        margin: 18px 15px 0 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        max-width: 767px;
+    }
+    
+    .chicken, .beef, .sushi {
+        width: calc(100% - 30px);
+        position: relative;
+        margin: 15px;
+    }
+}
