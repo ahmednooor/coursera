@@ -1,0 +1,17 @@
+body {
+    padding-top: 70px;
+}
+
+.navbar-default {
+    background-image: none;
+    background-color: lavender;
+}
+
+.navbar-default .navbar-collapse ul {
+    background-color: beige;
+}
+
+.paragraph {
+    background-color: aquamarine;
+    margin-top: 2em;
+}
